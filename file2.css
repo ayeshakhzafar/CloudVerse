@@ -1,0 +1,183 @@
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    color: #210c0c;
+    background: #f0f0f0; /* Background color for the body */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height for the body */
+}
+
+.sidebar {
+    width: 200px; /* Sidebar width */
+    background-color: #3a2e28; /* Sidebar background color */
+    color: #210c0c;
+    padding: 20px;
+    height: 100vh; /* Full height for the sidebar */
+    position: fixed; /* Keep the sidebar fixed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.6); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logo and app name alignment */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 240px; /* Space for the sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: url('bg.jpeg') no-repeat center center; /* Background applied here */
+    background-size: cover; /* Ensure the background covers the area */
+}
+
+/* User profile section */
+.user-profile {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Style for the centered search bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the additional buttons (Toggle and Location) */
+.additional-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.additional-options button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.additional-options button:hover {
+    background-color: #0056b3;
+}
+
+.weather-widget {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Center the text in the widget */
+}
+
+/* Flexbox for the charts */
+.chart-container {
+    display: flex; /* Use flexbox to arrange charts side by side */
+    justify-content: center; /* Center the charts */
+    margin-bottom: 20px; /* Space below the charts */
+}
+
+canvas {
+    width: 300px; /* Width of each chart */
+    height: 200px; /* Height of each chart */
+    margin: 0 10px; /* Space between charts */
+}
+
+/* Forecast table */
+.forecast-table {
+    margin-bottom: 20px;
+}
+
+#forecastTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#forecastTable th, #forecastTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#pagination {
+    text-align: center;
+}
+
+.chatbot {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
