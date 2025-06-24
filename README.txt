@@ -1,4 +1,4 @@
-# 🌦️ Weather Dashboard with Gemini Chatbot Integration
+# 🌦️ CloudVerse - Weather Dashboard with Gemini Chatbot Integration
 
 A fully responsive weather dashboard built with **HTML, CSS, JavaScript, OpenWeather API, Chart.js**, and **Gemini Chatbot API**. This application lets users search for a city, view the current weather, 5-day forecast, interactive charts, and even chat with an AI assistant for both weather-related and general queries.
 
