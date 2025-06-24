@@ -42,9 +42,8 @@ A fully responsive weather dashboard built with **HTML, CSS, JavaScript, OpenWea
 
 ### 1. Clone the Repo
 
-```bash
-git clone https://github.com/your-username/weather-dashboard.git
-cd weather-dashboard
+- git clone https://github.com/your-username/weather-dashboard.git
+- cd weather-dashboard
 
 ### 2. Setup API Keys
 If you’re not using .env:
