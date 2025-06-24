@@ -1,53 +1,107 @@
-Weather Dashboard:
-Overview:
-The Weather Dashboard is a responsive web application that provides real-time weather information based on user input. Users can search for weather conditions in various cities, view charts representing the weather data, and interact with a chatbot for quick weather-related queries. The application uses Tailwind CSS for styling, Chart.js for data visualization, and jQuery for dynamic content loading.
+# 🌦️ Weather Dashboard with Gemini Chatbot Integration
 
-Features:
-Responsive Design: Adapts to different screen sizes, ensuring a user-friendly experience on mobile devices, tablets, and desktops.
-Weather Data Display: Fetches and displays current weather data, including temperature, humidity, and weather conditions.
-Charts: Visualizes weather data using various chart types (temperature chart, condition chart, line chart).
-Chatbot Integration: Allows users to ask weather-related questions and receive instant responses.
-Sorting and Filtering: Users can sort and filter the forecast data displayed in a table.
-User Location Access: Provides an option for users to fetch weather data based on their current location.
+A fully responsive weather dashboard built with **HTML, CSS, JavaScript, OpenWeather API, Chart.js**, and **Gemini Chatbot API**. This application lets users search for a city, view the current weather, 5-day forecast, interactive charts, and even chat with an AI assistant for both weather-related and general queries.
 
-Technologies Used:
-HTML5
-CSS3 (Tailwind CSS)
-JavaScript (jQuery)
-Chart.js
-OpenWeather API (for fetching weather data)
-gemini chatbot API (for queries related to weather in the chat)
+---
 
-Installation:
-Clone the repository or download the files.
-Open index.html in a web browser to view the dashboard.
-Ensure you have an active internet connection to fetch data from the OpenWeather API
+## 🔍 Features
 
-Usage:
+### 🌍 Weather Dashboard
+- **City-based Weather Info**: Displays current weather data (temperature, humidity, wind speed, etc.)
+- **Dynamic Weather Widget**: Background adapts to real-time weather conditions
+- **5-Day Forecast Table** with:
+  - Pagination
+  - Filters:
+    - Sort temperatures (ascending/descending)
+    - Filter by rainy days
+    - Show the hottest day
+- **Charts via Chart.js**:
+  - 📊 **Bar Chart**: Temperature forecast
+  - 🥧 **Doughnut Chart**: Distribution of weather conditions
+  - 📈 **Line Chart**: Temperature trends
+  - All with animations (delay, drop)
 
--> Search for Weather:
+### 🤖 Chatbot Integration
+- Integrated with **Gemini API**
+- Smart detection of weather-related queries
+- Handles both weather and general-purpose questions
 
-Enter the city name in the search bar and click the "Get Weather" button to fetch the weather data.
-The fetched weather data will be displayed in the designated area.
--> View Charts:
+---
 
-After fetching the weather data, corresponding charts will be generated and displayed below the weather data.
--> Interact with the Chatbot:
+## 🛠️ Tech Stack
 
-Use the chatbot input field to ask questions related to the weather, and click the "Ask" button for responses.
--> Sort and Filter Forecast Data:
+- **Frontend**: HTML, CSS, JavaScript (Vanilla or jQuery)
+- **APIs**:
+  - [OpenWeather API](https://openweathermap.org/api) – For weather data
+  - [Gemini API](https://ai.google.dev/aistudio) – For chatbot
+- **Charts**: [Chart.js](https://www.chartjs.org/)
 
-Use the provided buttons to sort the forecast data in ascending or descending order or filter for rainy days or the highest temperature.
--> Toggle Temperature Units:
+---
 
-Click the "Toggle °C/°F" button to switch between Celsius and Fahrenheit.
--> Use Current Location:
+## 🚀 Getting Started
 
-Click the "Use My Location" button to fetch the weather data based on the user's current location.
+### 1. Clone the Repo
 
-Responsive Design:
-The layout has been designed to be fully responsive, adapting to various screen sizes. Here are the key responsive styles:
+```bash
+git clone https://github.com/your-username/weather-dashboard.git
+cd weather-dashboard
 
-The sidebar and main content area adjust their widths based on the screen size.
-Charts stack vertically on smaller screens.
-Buttons and input fields resize to ensure usability across devices.
+### 2. Setup API Keys
+If you’re not using .env:
+
+Replace the placeholder with your API keys inside script.js:
+
+- const OPENWEATHER_API_KEY = "your_api_key_here";
+- const GEMINI_API_KEY = "your_gemini_key_here";
+
+### 3. Run the App
+Simply open index.html in your browser. No server setup required.
+
+## ✅ Core Functionalities
+
+ - Current weather data (temp, humidity, wind speed, etc.)
+
+ - 5-day forecast displayed in a table
+
+ - Sort/filter functions on forecast
+
+ - Animated charts with Chart.js
+
+ - Gemini chatbot for user queries
+
+ - Dynamic weather background
+
+ - Error handling for invalid city names and API failures
+
+ - Toggle temperature unit (Celsius/Fahrenheit)
+
+ - Geolocation support (optional)
+
+ - Loading spinner during data fetch
+
+## 📊 Filters Implemented
+
+- Sort by temperature (ascending & descending)
+
+- Filter forecast to show only rainy days
+
+- Display the day with the highest temperature
+
+## 🌐 Live Link
+https://weather-dashboard-cyan-mu.vercel.app/#s
+
+## 📧 Contact
+
+Built by Ayesha – aspiring MERN Stack Developer
+
+📫 Email: ayeshakhalid.codes@gmail.com
+
+## 📝 Credits
+
+Weather Data: OpenWeather API
+
+Chatbot: Gemini AI Studio
+
+Charts: Chart.js
+
+
